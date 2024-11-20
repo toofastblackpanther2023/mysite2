@@ -1,0 +1,103 @@
+body {
+  font-size: 14px;
+  height: 100vh;
+}
+
+.container {
+  margin: 30px auto;
+  width: 700px;
+ 
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+
+}
+
+.menu li a {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  padding: 8px 0;
+  background: rgb(244,251,254);
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px 4px 0 0;
+  border: 1px solid rgba(0, 0, 0, 0.2); /* 薄い線を追加 */
+  border-bottom: none; /* 下のボーダーを消す */
+}
+
+.menu li a.active {
+  background: rgb(187,227,249);
+  color: #fff;
+}
+
+.menu li a:not(.active):hover {
+  opacity: 0.5;
+  transition: opacity 0.4s;
+}
+
+.content.active {
+  background: rgb(187,227,249);
+  color: #333;
+  min-height: 150px;
+  padding: 12px;
+  display: block;
+}
+
+.content {
+  display: none;
+}
+
+  #game_name img{
+    display: block;
+    margin: 30px auto;
+  }
+
+   img{
+    display: block;
+    margin: 30px auto;
+  }
+
+  #about p{
+    text-align: center;
+    display: block;
+    margin-top: 200px;
+  }
+
+  #service p{
+    text-align: left; 
+    display: block;
+     margin-top: 20px;
+  }
+
+  #service img+h1{
+    margin-top: 100px;
+  }
+
+  #contact p{
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+  }
+
+  .button {
+    all: unset;
+    display: block;
+    margin: 0 auto;
+    width: 160px;
+    height: 32px;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: black;
+    color: white;
+  }
